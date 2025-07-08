@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sürdürülebilir Alışkanlık Takipçisi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar Başlangıcı -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://img.icons8.com/ios-filled/50/000000/leaf.png" alt="Logo" width="32" height="32" class="d-inline-block align-text-top me-2">
+        Sürdürülebilir
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="habits.html">Alışkanlıklar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hesaplayıcı</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar Sonu -->
+
+  <!-- Slider Başlangıcı -->
+  <div id="main-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row align-items-center slider-content-row">
+          <div class="col-md-6 p-4">
+            <h2 class="slider-title mb-3">Sürdürülebilirlik Nedir?</h2>
+            <p class="slider-desc lead">
+              Sürdürülebilirlik, bugünün ihtiyaçlarını karşılarken gelecek nesillerin de kendi ihtiyaçlarını karşılayabilme hakkını gözeten bir yaşam biçimidir. Doğal kaynakların verimli kullanılması, çevrenin korunması ve toplumsal refahın artırılması sürdürülebilirliğin temelini oluşturur.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded slider-img" alt="Sürdürülebilirlik Nedir?">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row align-items-center slider-content-row">
+          <div class="col-md-6 p-4">
+            <h2 class="slider-title mb-3">Sürdürülebilirlik Alışkanlıkları Nelerdir?</h2>
+            <p class="slider-desc lead">
+              Sürdürülebilirlik alışkanlıkları; enerji tasarrufu yapmak, geri dönüşüme önem vermek, suyu verimli kullanmak, toplu taşıma veya bisiklet gibi çevre dostu ulaşım yöntemlerini tercih etmek ve bilinçli tüketim alışkanlıkları geliştirmek gibi günlük yaşantımızda uygulayabileceğimiz davranışlardır. Bu alışkanlıklar, hem çevremizi korumamıza hem de gelecek nesillere daha yaşanabilir bir dünya bırakmamıza yardımcı olur.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded slider-img" alt="Sürdürülebilirlik Alışkanlıkları Nelerdir?">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row align-items-center slider-content-row">
+          <div class="col-md-6 p-4">
+            <h2 class="slider-title mb-3">İklim Duyarlılığı</h2>
+            <p class="slider-desc lead">
+              İklim değişikliğine karşı birlikte hareket ederek, doğayı korumak ve sürdürülebilir bir gelecek için adım atmak hepimizin sorumluluğudur.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded slider-img" alt="İklim Duyarlılığı">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Önceki</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#main-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Sonraki</span>
+    </button>
+  </div>
+  <!-- Slider Sonu -->
+
+  <!-- Sürdürülebilir Alışkanlıklar Başlık ve Kartlar -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Sürdürülebilir Alışkanlıklar</h2>
+    <p class="text-center mb-4" style="max-width: 600px; margin: 0 auto; font-size: 1.1rem;">
+      Sürdürülebilir alışkanlıklar nelerdir ve nasıl yapılır görmek için tıkla.
+    </p>
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <a href="habits.html#habit-1" class="card h-100 shadow-sm text-decoration-none text-dark card-clickable">
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="mb-3" style="font-size:2.5rem;">♻️</div>
+            <h5 class="card-title text-center">Azalt, Yeniden Kullan, Geri Dönüştür</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <a href="habits.html#habit-2" class="card h-100 shadow-sm text-decoration-none text-dark card-clickable">
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="mb-3" style="font-size:2.5rem;">💡</div>
+            <h5 class="card-title text-center">Enerji Tasarrufu</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <a href="habits.html#habit-3" class="card h-100 shadow-sm text-decoration-none text-dark card-clickable">
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="mb-3" style="font-size:2.5rem;">🚿</div>
+            <h5 class="card-title text-center">Su Tasarrufu</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <a href="habits.html#habit-4" class="card h-100 shadow-sm text-decoration-none text-dark card-clickable">
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="mb-3" style="font-size:2.5rem;">🛒</div>
+            <h5 class="card-title text-center">Sürdürülebilir Tüketim</h5>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sürdürülebilir Alışkanlıklar Devamı -->
+  <div class="container mb-5">
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <a href="habits.html#habit-5" class="card h-100 shadow-sm text-decoration-none text-dark card-clickable">
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="mb-3" style="font-size:2.5rem;">🚲</div>
+            <h5 class="card-title text-center">Toplu Taşıma ve Bisiklet</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <a href="habits.html#habit-6" class="card h-100 shadow-sm text-decoration-none text-dark card-clickable">
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="mb-3" style="font-size:2.5rem;">🌳</div>
+            <h5 class="card-title text-center">Doğal Kaynakların Korunması</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <a href="habits.html#habit-7" class="card h-100 shadow-sm text-decoration-none text-dark card-clickable">
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="mb-3" style="font-size:2.5rem;">🛍️</div>
+            <h5 class="card-title text-center">Bilinçli Alışveriş</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <a href="habits.html#habit-8" class="card h-100 shadow-sm text-decoration-none text-dark card-clickable">
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="mb-3" style="font-size:2.5rem;">💧</div>
+            <h5 class="card-title text-center">Atık Su Yönetimi</h5>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

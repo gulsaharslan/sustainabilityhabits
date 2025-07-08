@@ -1,0 +1,123 @@
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+} 
+
+/* Slider boyutu ve konumu */
+#mainCarousel {
+  width: calc(100vw - 40px);
+  margin: 32px auto 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  height: 33vh;
+  min-height: 250px;
+  max-height: 350px;
+  max-width: 100%;
+}
+#mainCarousel .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 33vh;
+  min-height: 250px;
+  max-height: 350px;
+} 
+
+/* Slider content layout */
+.slider-content-row {
+  min-height: 250px;
+  height: 33vh;
+  max-height: 350px;
+}
+.slider-title {
+  font-weight: bold;
+}
+.slider-img {
+  width: 100%;
+  height: 33vh;
+  min-height: 200px;
+  max-height: 350px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .slider-content-row {
+    flex-direction: column !important;
+    height: auto;
+    min-height: unset;
+    max-height: unset;
+  }
+  .slider-img {
+    height: 200px;
+    min-height: 120px;
+    max-height: 250px;
+    margin-top: 16px;
+  }
+} 
+
+.card-clickable {
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.card-clickable:hover, .card-clickable:focus {
+  box-shadow: 0 8px 32px rgba(40,167,69,0.15);
+  transform: translateY(-4px) scale(1.03);
+  border-color: #198754;
+  text-decoration: none;
+}
+.card-clickable:active {
+  box-shadow: 0 2px 8px rgba(40,167,69,0.10);
+  transform: scale(0.98);
+}
+
+.habit-section {
+  background: #f3f7f4;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  border: 1px solid #e0ece6;
+}
+.habit-section:nth-of-type(2) {
+  background: #f7f4f3;
+  border-color: #ece6e0;
+}
+.habit-section:nth-of-type(3) {
+  background: #f4f3f7;
+  border-color: #e6e0ec;
+}
+.habit-section:nth-of-type(4) {
+  background: #f3f4f7;
+  border-color: #e0e3ec;
+}
+.habit-section:nth-of-type(5) {
+  background: #f7f6f3;
+  border-color: #ecebe0;
+}
+.habit-section:nth-of-type(6) {
+  background: #f3f7f6;
+  border-color: #e0eceb;
+}
+.habit-section:nth-of-type(7) {
+  background: #f7f3f6;
+  border-color: #ece0eb;
+}
+.habit-section:nth-of-type(8) {
+  background: #f6f7f3;
+  border-color: #ebece0;
+}
+.habit-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+@media (max-width: 576px) {
+  .habit-section {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 16px 10px;
+  }
+  .habit-icon {
+    margin-bottom: 10px;
+    margin-right: 0 !important;
+  }
+} 
